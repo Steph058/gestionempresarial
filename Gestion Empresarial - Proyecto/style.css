@@ -1,0 +1,239 @@
+/* ==== ESTILOS GENERALES ==== */
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+    background:#f4f7fb;color:#333;line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#0a2e5c,#1273de);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+    transition:all 0.5s ease;
+}
+
+header h1{
+    font-size:2.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+nav{
+    background:#0a2e5c;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px 20px;
+    transition:color 0.3s ease;
+}
+
+nav a:hover{
+    color:#ffd700;
+}
+
+section{
+    padding:50px 20px;
+    max-width:1200px;
+    margin:auto;
+    animation:fadeIn 1.5s ease;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+    font-size:2rem;
+    color:#0a2e5c;
+}
+
+/* ==== QUIENES SOMOS ==== */
+.about{
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align: justify;
+}
+
+#about h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#productos h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#promos h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#garantia h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contacto h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#comprar h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#contacto a{
+    text-decoration: none;
+}
+
+/* ==== PRODUCTOS ==== */
+.productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#fff;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    padding:20px;
+    text-align:center;
+    transition:transform 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:120px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#1273de;
+}
+
+.card p{
+    font-size:0.9rem;
+    margin-bottom:8px;
+}
+
+.card button{
+    background:#ffd700;
+    color:#0a2e5c;
+    padding:10px 15px;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:background 0.3s ease;
+}
+
+.card button:hover{
+    background:#e6c200;
+}
+
+/* ==== PROMOS ==== */
+ul{
+    padding:10px;
+}
+
+ul li{
+    margin:10px 0;
+    padding: 10px;
+    font-size:1.1rem;
+}
+
+
+/* ==== GARANTIA ==== */
+.garantia{
+    background:#1273de;
+    color:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.garantia h2{
+    color:white;
+}
+
+/* ==== CONTACTO ==== */
+.contacto{
+    text-align:center;
+}
+
+.contacto p{
+    margin:8px 0;
+}
+
+/* ==== FORMULARIO ==== */
+form{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    max-width:500px;
+    margin:20px auto;
+}
+
+form input,form select,form textarea{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+form button{
+    background:#ffd700;
+    color:#0a2e5c;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:background 0.3s ease;
+    font-weight:bold;
+}
+
+form button:hover{
+    background:#e6c200;
+}
+
+/* ==== FOOTER ==== */
+footer{
+    background:#0a2e5c;
+    color:white;
+    text-align:center;
+    padding:15px;
+}
+
+button{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.card p{
+    text-align: left;
+}
+
+.garantia p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header img{
+    width: 15%; height: 15%;
+    border-radius: 200px;
+}
+
+/* ==== ANIMACIONES ==== */
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
